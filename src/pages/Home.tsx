@@ -44,8 +44,8 @@ const Home: React.FC = () => {
                 Waitlist
                 <img src={rightLine} className="h-[2px]" alt="Right Line" />
             </div>
-            <div className="text-[64px] md:text-[128px] font-semibold bg-gradient-to-b from-[#49235F] to-[#D387FF] bg-clip-text text-transparent">
-                Algenius
+            <div className="text-[64px] md:text-[128px] font-semibold bg-gradient-to-b from-[#49235F] 50% via-[#793D8C] 75% to-[#D387FF] bg-clip-text text-transparent">
+            Algenius
             </div>
             <div className="font-sans text-base md:text-lg font-light w-[90vw] md:w-[50vw] lg:w-[30vw] text-center text-[#D387FF] my-4">
                 Be first in line to experience the future of AI with AIgenius! Join our waitlist for exclusive access.

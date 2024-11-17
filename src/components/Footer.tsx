@@ -22,7 +22,13 @@ const Footer: FC = () => {
                     <img src={medium} className="size-5" alt="Medium Icon" />
                 </button>
             </div>
-            <img src={planet} className="absolute bottom-[-7vh] left-0 w-full"></img>
+            <div className="absolute bottom-[-9vh] left-1/2 transform -translate-x-1/2 overflow-hidden w-screen">
+                <img
+                    src={planet}
+                    className="min-w-[1440px] max-w-none relative left-1/2 transform -translate-x-1/2"
+                    alt="Planet"
+                />
+            </div>
         </>
     );
 };
