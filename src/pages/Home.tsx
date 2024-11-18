@@ -50,7 +50,7 @@ const Home: React.FC = () => {
             <div className="font-sans text-base md:text-lg font-light w-[90vw] md:w-[50vw] lg:w-[30vw] text-center text-[#D387FF] my-4">
                 Be first in line to experience the future of AI with AIgenius! Join our waitlist for exclusive access.
             </div>
-            <form onSubmit={handleSubmit} className="flex items-center rounded-md w-[80vw] md:w-[50vw] lg:w-[35vw] my-4 border-[2px] border-[#D387FF33] bg-gradient-to-t from-[#D387FF33] to-[#D387FF00] text-[#D387FF]">
+            <form onSubmit={handleSubmit} className="flex items-center rounded-md w-[80vw] md:w-[50vw] lg:w-[35vw] my-4 border-[2px] border-[#D387FF33] bg-gradient-to-t from-[#D387FF33] to-[#D387FF00] text-[#D387FF] z-10">
                 <input
                     type="email"
                     placeholder="Your Email"
