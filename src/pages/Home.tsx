@@ -86,7 +86,7 @@ const Home: React.FC = () => {
                     onChange={(e) => setEmail(e.target.value)}
                     value={email}
                 />
-                <button type="submit" className={` ${isSmallScreen? "m-1 py-1 px-2":"m-2 px-4 py-2"} bg-[#D387FF] text-[12px] md:text-[14px] text-black font-medium rounded-md hover:bg-[#bc6bfe] duration-300 focus:outline-none min-w-max`}>
+                <button type="submit" className={` ${isSmallScreen? "m-1 py-2 px-3":"m-2 px-4 py-2"} bg-[#D387FF] text-[12px] md:text-[14px] text-black font-medium rounded-md hover:bg-[#bc6bfe] duration-300 focus:outline-none min-w-max`}>
                     Join Waitlist
                 </button>
             </form>

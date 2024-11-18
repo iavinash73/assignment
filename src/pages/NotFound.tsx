@@ -17,7 +17,7 @@ const NotFound: React.FC = () => {
             <h1 className="text-[60px] sm:text-[80px] md:text-[100px] lg:text-[130px] bg-gradient-to-b from-[#49235F] 50% via-[#793D8C] 75% to-[#D387FF] bg-clip-text text-transparent font-semibold">
                 404
             </h1>
-            <button onClick={() => { navigate('/') }} className='p-3 rounded-md w-[40vw] font-medium border-[2px] border-[#D387FF33] bg-gradient-to-t from-[#D387FF33] to-[#D387FF00] text-[#D387FF]'>
+            <button onClick={() => { navigate('/') }} className='relative z-10 p-3 rounded-md w-[40vw] font-medium border-[2px] border-[#D387FF33] bg-gradient-to-t from-[#D387FF33] to-[#D387FF00] text-[#D387FF]'>
                 Back to home
             </button>
         </div>

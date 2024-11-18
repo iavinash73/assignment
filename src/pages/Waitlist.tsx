@@ -52,7 +52,7 @@ const WaitlistPage: React.FC = () => {
                     ))}
                 </ul>
             )}
-              <button onClick={() => { navigate('/') }} className='p-3 rounded-md w-[40vw] font-medium border-[2px] border-[#D387FF33] bg-gradient-to-t from-[#D387FF33] to-[#D387FF00] text-[#D387FF] mt-10'>
+              <button onClick={() => { navigate('/') }} className='p-3 rounded-md w-[40vw] font-medium border-[2px] border-[#D387FF33] bg-gradient-to-t from-[#D387FF33] to-[#D387FF00] text-[#D387FF] mt-10 relative z-10'>
                 Back to home
             </button>
         </div>
