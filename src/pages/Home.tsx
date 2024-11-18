@@ -38,7 +38,7 @@ const Home: React.FC = () => {
             window.removeEventListener('resize', handleResize);
         };
     }, [viewportHeight]);
-    
+
     useEffect(()=>{
         if(viewportHeight <= 680){
             setIsSmallScreen(true);
@@ -100,7 +100,7 @@ const Home: React.FC = () => {
                 </button>
             </form>
             {message && <div className="text-center text-[#D387FF99]">{message}</div>}
-            <div className={`${viewportHeight<=680 ? "mt-1" : "mt-4"} flex -space-x-2 overflow-hidden items-center`}>
+            <div className={`${viewportHeight<=680 ? "mt-1" : "mt-4"} mb-[60px] flex -space-x-2 overflow-hidden items-center`}>
                 <img alt="Profile 1" src={profile1} className="inline-block size-8 rounded-full border-2 border-[#2B1B38]" />
                 <img alt="Profile 2" src={profile2} className="inline-block size-8 rounded-full border-2 border-[#2B1B38]" />
                 <img alt="Profile 3" src={profile3} className="inline-block size-8 rounded-full border-2 border-[#2B1B38]" />
