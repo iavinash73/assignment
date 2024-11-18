@@ -38,6 +38,15 @@ const Home: React.FC = () => {
             window.removeEventListener('resize', handleResize);
         };
     }, [viewportHeight]);
+    
+    useEffect(()=>{
+        if(viewportHeight <= 680){
+            setIsSmallScreen(true);
+        }
+        else{
+            setIsSmallScreen(false);
+        }
+    },[])
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
