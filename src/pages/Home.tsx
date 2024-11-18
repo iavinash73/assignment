@@ -73,7 +73,7 @@ const Home: React.FC = () => {
     return (
         <>
             {/* <img src={home} className='absolute h-screen w-screen'></img> */}
-            {isSmallScreen?<div>small</div>:<></>}
+            {isSmallScreen?<div className='text-white'>small</div>:<></>}
             <img src={logo} className={`size-10 ${isSmallScreen ? "mb-6" : "mb-14"}`} alt="Logo" />
             <div className="relative font-normal text-sm flex items-center gap-5 text-[#D387FF]">
                 <img src={leftLine} className="h-[2px]" alt="Left Line" />
@@ -84,10 +84,10 @@ const Home: React.FC = () => {
             <div className={`${isSmallScreen  ? "text-[15vh]" : "text-[64px] md:text-[128px]"}  font-semibold bg-gradient-to-b from-[#49235F] 50% via-[#793D8C] 75% to-[#D387FF] bg-clip-text text-transparent`}>
                 Algenius
             </div>
-            <div className={` ${viewportHeight<=680 ? "text-sm my-1" : "text-base md:text-lg my-4"} font-sans  font-light w-[90vw] md:w-[50vw] lg:w-[30vw] text-center text-[#D387FF]`}>
+            <div className={` ${isSmallScreen ? "text-sm my-1" : "text-base md:text-lg my-4"} font-sans  font-light w-[90vw] md:w-[50vw] lg:w-[30vw] text-center text-[#D387FF]`}>
                 Be first in line to experience the future of AI with AIgenius! Join our waitlist for exclusive access.
             </div>
-            <form onSubmit={handleSubmit} className={` ${viewportHeight<=680 ? "text-sm my-4" : "text-base md:text-lg my-4"} flex items-center rounded-md w-[80vw] md:w-[50vw] lg:w-[35vw] border-[2px] border-[#D387FF33] bg-gradient-to-t from-[#D387FF33] to-[#D387FF00] text-[#D387FF] z-10`}>
+            <form onSubmit={handleSubmit} className={` ${isSmallScreen ? "text-sm my-4" : "text-base md:text-lg my-4"} flex items-center rounded-md w-[80vw] md:w-[50vw] lg:w-[35vw] border-[2px] border-[#D387FF33] bg-gradient-to-t from-[#D387FF33] to-[#D387FF00] text-[#D387FF] z-10`}>
                 <input
                     type="email"
                     placeholder="Your Email"
@@ -100,33 +100,12 @@ const Home: React.FC = () => {
                 </button>
             </form>
             {message && <div className="text-center text-[#D387FF99]">{message}</div>}
-            <div className={`${viewportHeight<=680 ? "mt-1" : "mt-4"} mb-[60px] flex -space-x-2 overflow-hidden items-center`}>
+            <div className={`${isSmallScreen ? "mt-1" : "mt-4"} mb-[60px] flex -space-x-2 overflow-hidden items-center`}>
                 <img alt="Profile 1" src={profile1} className="inline-block size-8 rounded-full border-2 border-[#2B1B38]" />
                 <img alt="Profile 2" src={profile2} className="inline-block size-8 rounded-full border-2 border-[#2B1B38]" />
                 <img alt="Profile 3" src={profile3} className="inline-block size-8 rounded-full border-2 border-[#2B1B38]" />
                 <div className="pl-6 text-[#D387FF90] text-sm md:text-base">Join 5,000+ already onboard</div>
             </div>
-            {/* <div className="flex gap-10">
-                <button className='opacity-70 hover:opacity-100 duration-300'>
-                    <img src={x} className="size-5" alt="Close Icon" />
-                </button>
-                <button className='opacity-70 hover:opacity-100 duration-300'>
-                    <img src={facebook} className="size-5" alt="Facebook Icon" />
-                </button>
-                <button className='opacity-70 hover:opacity-100 duration-300'>
-                    <img src={linkedin} className="size-5" alt="LinkedIn Icon" />
-                </button>
-                <button className='opacity-70 hover:opacity-100 duration-300'>
-                    <img src={medium} className="size-5" alt="Medium Icon" />
-                </button>
-            </div>
-            <div className={`absolute bottom-[-70px] left-1/2 transform -translate-x-1/2 overflow-hidden w-screen`}>
-                <img
-                    src={planet}
-                    className="min-w-[1440px] max-w-none relative left-1/2 transform -translate-x-1/2"
-                    alt="Planet"
-                />
-            </div> */}
         </>
     );
 };
