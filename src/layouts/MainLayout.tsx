@@ -19,7 +19,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     <div
       className="h-[100vh] w-[100vw] font-sans flex flex-col justify-center items-center"
       style={{
-        backgroundImage: "radial-gradient(circle, #230D37, #0D0316)",
+        backgroundImage: "radial-gradient(circle, #230D37, #000)",
       }}
     >
       {children}

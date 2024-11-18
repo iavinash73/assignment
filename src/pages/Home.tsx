@@ -1,18 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import logo from "../assets/Logo.png"
-import leftLine from "../assets/lineL.png"
-import rightLine from "../assets/lineR.png"
-import profile1 from "../assets/Avatar1.png"
-import profile2 from "../assets/Avatar2.png"
-import profile3 from "../assets/Avatar3.png"
+import logo from "/assets/Logo.png"
+import leftLine from "/assets/lineL.png"
+import rightLine from "/assets/lineR.png"
+import profile1 from "/assets/Avatar1.png"
+import profile2 from "/assets/Avatar2.png"
+import profile3 from "/assets/Avatar3.png"
 import { db } from '../firebaseConfig';
 import { collection, addDoc } from 'firebase/firestore';
-import home from "../assets/Home.png"
-import x from '../assets/x.png';
-import facebook from '../assets/facebook.png';
-import linkedin from '../assets/linkedin.png';
-import medium from '../assets/medium.png';
-import planet from "../assets/planet.png";
 
 
 const Home: React.FC = () => {
@@ -72,16 +66,13 @@ const Home: React.FC = () => {
 
     return (
         <>
-            {/* <img src={home} className='absolute h-screen w-screen'></img> */}
-            {isSmallScreen?<div className='text-white'>small</div>:<></>}
-            <img src={logo} className={`size-10 ${isSmallScreen ? "mb-6" : "mb-14"}`} alt="Logo" />
+            <img src={logo} className={`size-10 ${isSmallScreen ? "mb-[10vh]" : "mb-16"}`} alt="Logo" />
             <div className="relative font-normal text-sm flex items-center gap-5 text-[#D387FF]">
                 <img src={leftLine} className="h-[2px]" alt="Left Line" />
                 Waitlist
-                <div>{viewportHeight}</div>
                 <img src={rightLine} className="h-[2px]" alt="Right Line" />
             </div>
-            <div className={`${isSmallScreen  ? "text-[15vh]" : "text-[64px] md:text-[128px]"}  font-semibold bg-gradient-to-b from-[#49235F] 50% via-[#793D8C] 75% to-[#D387FF] bg-clip-text text-transparent`}>
+            <div className={`${isSmallScreen  ? "text-[15vh]" : "text-[64px] sm:text-[128px]"} font-semibold bg-gradient-to-b from-[#49235F] 50% via-[#793D8C] 75% to-[#D387FF] bg-clip-text text-transparent`}>
                 Algenius
             </div>
             <div className={` ${isSmallScreen ? "text-sm my-1" : "text-base md:text-lg my-4"} font-sans  font-light w-[90vw] md:w-[50vw] lg:w-[30vw] text-center text-[#D387FF]`}>
