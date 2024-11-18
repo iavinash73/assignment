@@ -1,8 +1,6 @@
-// src/firebaseConfig.js
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
-// Your Firebase config object
 const firebaseConfig = {
   apiKey: "AIzaSyCRscQBK9l3dqoFv65-fRfSDAZJWY5N_zM",
   authDomain: "sarvam-assignment.firebaseapp.com",
@@ -13,7 +11,6 @@ const firebaseConfig = {
   measurementId: "G-JX29D1G55X"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
